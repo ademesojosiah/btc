@@ -1,0 +1,38 @@
+.card{
+  border-right: 1px solid #e1e3e4; 
+  padding: 20px;
+}
+
+.card:last-child{
+  border: none;
+}
+
+.card-image{
+  width: 214.5px;
+  height: 214.5px;
+}
+
+.card-name{
+  margin: 0px 0px 12px;
+  font-size: 15px;
+}
+
+.card-price{
+  font-size: 21px;
+}
+
+.card-button-con{
+  margin: 80px 0px 0px 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-button{
+  outline: none;
+  border: none;
+  width: 100%;
+  background-color: var(--btn-gray);
+  color: var(--mid-gray);
+  padding: 10px;
+  border-radius: 2px;
+}

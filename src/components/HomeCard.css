@@ -1,0 +1,25 @@
+.homecard {
+	width: 45%;
+	background-color: var(--mid-gray);
+	border-radius: 3px;
+	margin-top: 60px;
+	padding: 10px 20px;
+}
+
+.homecard-logo {
+	width: 70px;
+}
+
+.homecard-head {
+	font-size: 18px;
+	padding: 10px 0px;
+}
+
+.homecard-text {
+	font-size: 15px;
+}
+
+
+a{
+  text-decoration: none;
+}

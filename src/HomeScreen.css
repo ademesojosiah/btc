@@ -1,0 +1,83 @@
+.homescreen,
+.home,
+.banner {
+	width: 100%;
+}
+
+.info,
+.home {
+	background-color: #fff;
+}
+
+.banner {
+	display: flex;
+	background-color: #0e0c18;
+}
+
+.img {
+	width: 100%;
+	max-width: 68%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.info {
+	display: grid;
+	padding: 40px 40px 40px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	/* background-color: var(---gray); */
+}
+
+.home-mid {
+	display: flex;
+	padding: 0px 40px;
+	gap: 2%;
+}
+.space {
+	padding: 40px 40px;
+}
+
+.home-coin {
+	display: flex;
+	position: relative;
+	background: none;
+	justify-content: space-between;
+	overflow-x: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.home-coin::-webkit-scrollbar {
+	display: none;
+}
+
+@media screen and (max-width: 870px) {
+	.homecard {
+		width: unset !important;
+	}
+	.home-mid {
+		flex-direction: column;
+	}
+
+	.info {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 560px) {
+	.info {
+		grid-template-columns: 1fr;
+		padding: 10px 10px;
+	}
+
+	.items {
+		justify-content: center;
+	}
+
+	.info-header {
+		width: 306px;
+	}
+}
