@@ -19,9 +19,8 @@
 	font-size: 15px;
 }
 
-
-a{
-  text-decoration: none;
+a {
+	text-decoration: none;
 }
 
 @media screen and (max-width: 870px) {
@@ -30,9 +29,8 @@ a{
 	}
 }
 
-
 @media (max-width: 600px) {
-  .homecard{
+	.homecard {
 		padding: 22px 20px;
 	}
 }
