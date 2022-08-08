@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "./Nav";
 import hero from "./hero.webp";
 import './HomeScreen.css'
 import Item from "./components/Item";
@@ -15,11 +14,11 @@ import Coin from "./components/Coin";
 const HomeScreen = () => {
 	return (
 		<div className="homescreen">
-			<Nav />
+			
 
 			<div className="home">
 				<section className="banner">
-					<img className="img" src={hero} alt="hero" />
+					<img className="img" src={"https://cdn.globalso.com/jsbit/Jsbit-banner-1.jpg"} alt="hero" />
 				</section>
 
         <section className="info">
@@ -28,6 +27,10 @@ const HomeScreen = () => {
           <Item svg={<Svg3/>} header={'30 days warranty'} text={'We offer warranty on all products'} />
           <Item svg={<Svg4 />} header={'Customer Service'} text={'Top of the line Email, Chat and Phone support'} />
         </section>
+
+        <div className="button_con">
+          <button className="cta">Shop Now</button>
+        </div>
 
         <Box />
         <section className="home-mid">

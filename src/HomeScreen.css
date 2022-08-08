@@ -11,7 +11,7 @@
 
 .banner {
 	display: flex;
-	background-color: #0e0c18;
+	background-color: #0c142a;
 }
 
 .img {
@@ -52,6 +52,29 @@
 
 .home-coin::-webkit-scrollbar {
 	display: none;
+}
+
+.cta{
+	margin-left: auto;
+	margin-right: auto;
+	background: var(--btn-gray);
+	color: var(--mid-gray);
+	padding: 10px 30px;
+	transition: opacity 0.2s ease-in-out,
+		transform 0.95s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		border-radius: 5px;
+		border: none;
+
+}
+
+.cta:hover{
+	transform: scale(1.1);
+}
+
+.button_con{
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 @media screen and (max-width: 870px) {

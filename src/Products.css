@@ -1,0 +1,23 @@
+.products{
+  background-color: #fff;
+}
+
+.products_header{
+  display: flex;
+  gap: 40px;
+  padding: 0px 40px;
+}
+
+.products_main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.products_side{
+  grid-column: 1/4;
+  border: 1px solid var(--mid-gray);
+}
+
+.products_mid{
+  grid-column: 4/4;
+}
