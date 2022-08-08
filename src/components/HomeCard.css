@@ -3,7 +3,7 @@
 	background-color: var(--mid-gray);
 	border-radius: 3px;
 	margin-top: 60px;
-	padding: 10px 20px;
+	padding: 30px 20px;
 }
 
 .homecard-logo {
@@ -22,4 +22,17 @@
 
 a{
   text-decoration: none;
+}
+
+@media screen and (max-width: 870px) {
+	.card-button-con {
+		margin-top: 20px;
+	}
+}
+
+
+@media (max-width: 600px) {
+  .homecard{
+		padding: 22px 20px;
+	}
 }

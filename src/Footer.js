@@ -29,7 +29,7 @@ const Footer = () => {
                 <h3>Newsletter</h3>
                         <p>Sign Up For The Latest Miner News & Exclusive Offers</p>
                         <input type="text" name="" id="" placeholder='Your email'/>
-                        <button>SUBSCRIBE</button>
+                        <button className='sub'>SUBSCRIBE</button>
             </div>
             <div className='upper_footer_columns'>
                 <h3>BT-Miners</h3>

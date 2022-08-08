@@ -2,12 +2,17 @@
     background-color: var(--ft-light);
     display: flex;
     justify-content: space-evenly;
+    padding: 20px 0px;
 }
 
 .upper_footer_columns p a{
     color: var(--mid-gray);
     text-decoration: none;
     color: var(--dark_green);
+}
+
+.sub{
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 200ms;
 }
 
 .upper_footer_columns h3{
