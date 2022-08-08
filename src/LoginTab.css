@@ -1,0 +1,86 @@
+.loginTab .login_or::before , .login_or::after{
+    margin: 5px;
+    content: '';
+    border-top: 2px solid var(--text);
+    width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 1px;
+}
+
+.loginTab a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.loginTab{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 20%;
+}
+
+.loginTab h1{
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.loginTab_form{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+.loginTab_form input{
+    padding: 12px 18px ;
+    margin-bottom: 1rem;
+}
+
+.loginTab_form button{
+    cursor: pointer;
+    border: none;
+    color: var(--mid-gray);
+    background-color: var(--ft-light);
+    font-family: 'Source Sans Pro', sans-serif;
+    width: max-content;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 10px 16px;
+    margin-top: 1rem ;
+    margin-bottom: 1rem ;
+    
+
+}
+
+.loginTab_form button:hover{
+    border:2px solid var(--ft-light) ;
+    background-color: transparent;
+    color: var(--ft-light);
+}
+
+
+.loginTab_signin_options{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginTab_signin_options button{
+    cursor: pointer;
+    border-radius: 15px;
+    border: 2px solid var(--ft-light);
+    color: var(--ft-light);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    width: 20%;
+    margin-bottom: .8rem;
+}
+
+.loginTab_lower_div p {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+}
