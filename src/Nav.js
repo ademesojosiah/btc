@@ -38,7 +38,7 @@ const Nav = () => {
                  <p> BY OVER 10000 Customers</p>
             </div >
             <div className='third_nav_info'>
-                <button>Book A Free Consultation</button>
+                <button className='sub nav'>Book A Free Consultation</button>
             </div>
 
         </div>

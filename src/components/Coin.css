@@ -1,11 +1,11 @@
-.coin{
-  position: relative;
-  /* background: none; */
+.coin {
+	position: relative;
+	/* background: none; */
 }
 
 .coin-img {
-  /* position: absolute; */
-  z-index: -1;
+	/* position: absolute; */
+	z-index: -1;
 	width: 190px;
 	transition: opacity 0.2s ease-in-out,
 		transform 0.95s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -26,4 +26,18 @@
 
 .coin-name {
 	text-align: center;
+}
+
+@media screen and (max-width: 870px) {
+	.coin-img {
+		margin-top: 20px;
+    width: 110px;
+	}
+}
+
+@media (max-width: 600px) {
+	.coin-img {
+		width: 90px;
+		padding-right: 10px;
+	}
 }

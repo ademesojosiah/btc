@@ -1,38 +1,53 @@
-.card{
-  border-right: 1px solid #e1e3e4; 
-  padding: 20px;
+.card {
+	border-right: 1px solid #e1e3e4;
+	padding: 20px;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 200ms;
 }
 
-.card:last-child{
-  border: none;
+.card:last-child {
+	border: none;
 }
 
-.card-image{
-  width: 214.5px;
-  height: 214.5px;
+.card-image {
+	width: 214.5px;
+  transition: all ease 200ms;
 }
 
-.card-name{
-  margin: 0px 0px 12px;
-  font-size: 15px;
+.card-name {
+	margin: 0px 0px 12px;
+	font-size: 15px;
 }
 
-.card-price{
+.card-price {
   font-size: 21px;
 }
 
-.card-button-con{
-  margin: 80px 0px 0px 0px;
-  margin-left: auto;
-  margin-right: auto;
+.card-button-con {
+  transition: all ease 250ms;
+	margin: 80px 0px 0px 0px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.card-button{
-  outline: none;
-  border: none;
-  width: 100%;
-  background-color: var(--btn-gray);
-  color: var(--mid-gray);
-  padding: 10px;
-  border-radius: 2px;
+.card-button {
+	outline: none;
+	border: none;
+	width: 100%;
+	background-color: var(--btn-gray);
+	color: var(--mid-gray);
+	padding: 10px;
+	border-radius: 2px;
+}
+
+@media screen and (max-width: 870px) {
+	.card-button-con {
+		margin-top: 20px;
+	}
+}
+
+
+@media (max-width: 600px) {
+  .card-image {
+    width: 150px;
+  }
 }

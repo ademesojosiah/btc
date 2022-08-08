@@ -70,7 +70,7 @@
 @media (max-width: 560px) {
 	.info {
 		grid-template-columns: 1fr;
-		padding: 10px 10px;
+		padding: 40px 10px 0px;
 	}
 
 	.items {
@@ -79,5 +79,11 @@
 
 	.info-header {
 		width: 306px;
+	}
+
+	.img {
+		width: 100%;
+		max-width: 100%;
+		min-width: none;
 	}
 }
