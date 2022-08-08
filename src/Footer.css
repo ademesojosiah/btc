@@ -1,0 +1,106 @@
+.upper_footer{
+    background-color: var(--ft-light);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.upper_footer_columns p a{
+    color: var(--mid-gray);
+    text-decoration: none;
+    color: var(--dark_green);
+}
+
+.upper_footer_columns h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: var(--mid-gray);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.upper_footer_columns p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    max-width: 150px;
+    color: var(--mid-gray);
+}
+
+.upper_footer_newsletter{
+    display: flex;
+    flex-direction: column;
+}
+
+.upper_footer_newsletter input{
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+}
+
+.upper_footer_newsletter button{
+    padding: 10px 15px;
+    background-color: var(--dark_green);
+    color: var(--ft-light);
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    width: 70%;
+}
+
+.upper_footer_newsletter button:hover{
+    background-color: transparent;
+    border: 2px solid var(--dark_green);
+    color: var(--dark_green);
+}
+
+
+.upper_footer_columns_icons img{
+    margin-right: 10px;
+}
+
+
+.lower_footer{
+    background-color: var(--ft-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.lower_footer_text p{
+    font-family:  'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--mid-gray);
+    margin-bottom: 10px;
+}
+
+.lower_footer_text p a{
+    text-decoration: none;
+    color: var(--mid-gray);
+
+}
+.lower_footer_icon img{
+    margin-left: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .upper_footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .upper_footer_columns{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .lower_footer_text{
+        max-width: 270px;
+    }
+    
+}
