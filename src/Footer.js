@@ -12,13 +12,13 @@ const Footer = () => {
     <div className='footer'>
         <div className='upper_footer'>
             <div className='upper_footer_columns'><h3>links</h3>
-            <p><a href="/" target="_blank"><strong>Payment Method</strong></a></p>
-            <p><a href="https://affiliate.bt-miners.com" target="_blank"><strong>Affiliate</strong></a></p>
-            <p><a href="/" target="_blank"><strong>Privacy Policy</strong></a></p>
-            <p><a href="/" target="_blank"><strong>Return Policy</strong></a></p>
-            <p><a href="/" target="_blank" ><strong>Terms and Conditions</strong></a></p>
+            <p><a href="/" ><strong>Payment Method</strong></a></p>
+            <p><a href="https://affiliate.bt-miners.com"><strong>Affiliate</strong></a></p>
+            <p><a href="/" ><strong>Privacy Policy</strong></a></p>
+            <p><a href="/" ><strong>Return Policy</strong></a></p>
+            <p><a href="/" ><strong>Terms and Conditions</strong></a></p>
             <p><a href="/" ><strong>Payment &amp; Shipment &amp; Warranty</strong></a></p>
-            <p><a href="/" target="_blank" ><strong>Client's Review Videos</strong></a></p>
+            <p><a href="/" ><strong>Client's Review Videos</strong></a></p>
             <p><a href="/"><strong>News</strong></a></p>
             </div>
             <div  className='upper_footer_columns upper_footer_columns_icons'>

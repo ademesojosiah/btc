@@ -17,9 +17,9 @@ const Nav = () => {
             </div>
             <div className='second_nav_icons'>
                 <div><p><span className="second_nav_icon_login">Log in</span> or <span className="second_nav_icon_create_account">Create account</span></p></div>
-                <div className='second_nav_icon_cart'><img src="https://img.icons8.com/material-rounded/24/FFFFFF/shopping-cart.png"/>Cart</div>
+                <div className='second_nav_icon_cart'><img src="https://img.icons8.com/material-rounded/24/FFFFFF/shopping-cart.png" alt='cart icon'/>Cart</div>
                 <div className='second_nav_icon_naira'>NGN</div>
-                <div className='second_nav_icon_search'><img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"/> <input type="search" placeholder='Search' /></div>
+                <div className='second_nav_icon_search'><img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt=''/> <input type="search" placeholder='Search' /></div>
             </div>
 
         </div>
@@ -45,7 +45,7 @@ const Nav = () => {
         <div className='mobile_nav_menu'>
             <div className='mobile_icon'>{!mobile ? <><img onClick={()=>setmobile(true)} src={Ham} alt="" /><p>Menu</p></> : <>< img  className='mobile_icon_close_icon' onClick={()=>setmobile(false)} src="https://img.icons8.com/ios-glyphs/30/FFFFFF/delete-sign.png" alt="" /><p>Menu</p></>   }</div>
             <div>
-                <div className='mobile_icon_cart'><img src="https://img.icons8.com/material-rounded/24/FFFFFF/shopping-cart.png"/>Cart</div>
+                <div className='mobile_icon_cart'><img src="https://img.icons8.com/material-rounded/24/FFFFFF/shopping-cart.png" alt='' />Cart</div>
                 <div className='mobile_icon_naira'>NGN</div>
             </div>
         </div>
@@ -56,7 +56,7 @@ const Nav = () => {
                 <div className="dropDown_head"><a href="/">MINER REPAIR</a></div>
                 <MobileDropdown title={'KNOWLEDGE'}  links={[{url:'',text:'Miner Selection'},{url:'',text:'Setting Up Your Miner'},{url:'',text:'About Kadena(KDA)'},{url:'',text:'About Handshake(HNS)'},{url:'',text:'About Litecoin(LTC)'},{url:'',text:'About Dodge(DODGE)'},{url:'',text:'Miners FAQs'},{url:'',text:'GoldShell Indicator Light'}]}/>
                 <MobileDropdown title={'CONTACT'}  links={[{url:'',text:'Service'},{url:'',text:'Sell Your Miner'},{url:'',text:'Miner Hosting'},{url:'',text:'Join Us'},{url:'',text:'About Us'},{url:'',text:'Newsletter'},{url:'',text:'Client Review Videos'}]}/>
-                <div className='second_nav_icon_search'><img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"/> <input type="search" placeholder='Search' /></div>          
+                <div className='second_nav_icon_search'><img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt=''/> <input type="search" placeholder='Search' /></div>          
             </div>)}
 
         <div className='mobile_menu_logo'>
@@ -71,23 +71,23 @@ const Nav = () => {
         <div className='fourth_nav'>
             <div className='dropBtn'><button className='first_dropdown'>MINERS PROFITABILITY</button>
             <div className='dropBtn_content'>
-                <a href="">Miners Probability</a>
-                <a href="">Cost Calculator</a>
-                <a href="">Btc Earnings Calculator</a>
-                <a href="">Eth Earnings Calculator</a>
-                <a href="">LTC + Doge Earning Calculator</a>
-                <a href="">ETC Earnings Calculator</a>
-                <a href="">KDA Earnings Calculator</a>
-                <a href="">HNS Earnings Calculator</a>
+                <a href="/">Miners Probability</a>
+                <a href="/">Cost Calculator</a>
+                <a href="/">Btc Earnings Calculator</a>
+                <a href="/">Eth Earnings Calculator</a>
+                <a href="/">LTC + Doge Earning Calculator</a>
+                <a href="/">ETC Earnings Calculator</a>
+                <a href="/">KDA Earnings Calculator</a>
+                <a href="/">HNS Earnings Calculator</a>
             </div>
             </div>
             <div className='dropBtn'><button className=' dropdown '>ALL MINERS</button>
             <div className='dropBtn_content'>
-                <a href="">Bitcoin Miners</a>
-                <a href="">Ethereum Miners</a>
-                <a href="">LiteCoin & DodgeCoin Miners</a>
-                <a href="">Other Altcoin Miners</a>
-                <a href="">Parts and Accessories </a>
+                <a href="/">Bitcoin Miners</a>
+                <a href="/">Ethereum Miners</a>
+                <a href="/">LiteCoin & DodgeCoin Miners</a>
+                <a href="/">Other Altcoin Miners</a>
+                <a href="/">Parts and Accessories </a>
             </div>
             </div>
             <div className='dropBtn'><button className=' dropdown '>PAYMENT METHOD</button>
@@ -96,25 +96,25 @@ const Nav = () => {
             </div>
             <div className='dropBtn'><button className=' dropdown '>KNOWLEDGE</button>
             <div className='dropBtn_content'>
-                <a href="">Miner Selection</a>
-                <a href="">Setting Up Your Miner</a>
-                <a href="">About Kadena(KDA)</a>
-                <a href="">About Handshake(HNS)</a>
-                <a href="">About Litecoin(LTC)</a>
-                <a href="">About Dodge(DODGE)</a>
-                <a href="">Miners FAQs</a>
-                <a href="">GoldShell Indicator Light</a>
+                <a href="/">Miner Selection</a>
+                <a href="/">Setting Up Your Miner</a>
+                <a href="/">About Kadena(KDA)</a>
+                <a href="/">About Handshake(HNS)</a>
+                <a href="/">About Litecoin(LTC)</a>
+                <a href="/">About Dodge(DODGE)</a>
+                <a href="/">Miners FAQs</a>
+                <a href="/">GoldShell Indicator Light</a>
             </div>
             </div>
             <div className='dropBtn'><button className=' dropdown '>CONTACT</button>
             <div className='dropBtn_content'>
-                <a href="">Service</a>
-                <a href="">Sell Your Miner</a>
-                <a href="">Miner Hosting</a>
-                <a href="">Join Us</a>
-                <a href="">About Us</a>
-                <a href="">Newsletter</a>
-                <a href="">Client Review Videos</a>
+                <a href="/">Service</a>
+                <a href="/">Sell Your Miner</a>
+                <a href="/">Miner Hosting</a>
+                <a href="/">Join Us</a>
+                <a href="/">About Us</a>
+                <a href="/">Newsletter</a>
+                <a href="/">Client Review Videos</a>
             </div>
             </div>
 
