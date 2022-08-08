@@ -1,5 +1,5 @@
 .first_nav{
-    background-color: #d77e6a;
+    background-color:transparent ;
     padding: 5px 30px;
 
 
@@ -8,7 +8,7 @@
 .first_nav p{
     font-family:'JetBrains Mono', monospace;
     font-weight: 400;
-    color: #f1f4f3;
+    color: var(--text);
     font-size: 0.9rem;
     text-align: center;
 }
@@ -25,8 +25,7 @@
 
 .second_nav .second_nav_details p{
     line-height: 25px;
-    max-width: 320px;
-    width: 100%;
+    width: 350px;
     text-align: left;
     color: #f1f4f3;
     font-family: 'JetBrains Mono', monospace;
@@ -53,7 +52,7 @@
 }
 
 .second_nav .second_nav_icons div p span:hover, .second_nav .second_nav_icon_cart:hover , .second_nav_icon_search:hover {
-    color: #d77e6a;
+    color: var(--dark_green);
 }
 
 .second_nav .second_nav_icon_cart , .second_nav_icon_search {
@@ -82,7 +81,7 @@
 
 .second_nav_icon_search{
     padding: 5px;
-    background-color: #f1f4f3;
+    background-color: #fff;
     border-radius: 5px;
 }
 
@@ -131,16 +130,17 @@
 .third_nav_info button{
     border: none;
     border-radius: 5px;
-    color: #f1f4f3;
-    background: #d77e6a ;
+    color: var(--text);
+    background: var(--dark_green) ;
     padding: 15px 20px;
-    box-shadow: 0px 3px 2px grey;
+    font-weight: 600;
+    box-shadow: 0px 3px 2px var(--ft-light);
 }
 
 .third_nav_info button:hover{
     background-color: transparent;
-    border: 2px solid #d77e6a;
-    color: #d77e6a;
+    border: 2px solid var(--ft-light);
+    color: var(--ft-light);
 }
 
 
@@ -208,5 +208,115 @@
 }
 
 .fourth_nav .dropBtn .dropBtn_content a:hover ,.fourth_nav .first_dropdown:hover, .fourth_nav .dropdown:hover{
-    color: #d77e6a;
+    color: var(--dark_green);
+}
+
+.mobile_menu_logo, .mobile_nav_menu ,.mobile_menu_dropdown{
+    display: none;
+}
+
+
+@media screen and (max-width:600px) {
+    .first_nav{
+        display: none;
+    }
+
+    .second_nav .second_nav_icons{
+        display: none;
+    }
+    
+    .second_nav{
+        flex-direction: column;
+    }
+
+    
+    .second_nav .second_nav_details{
+        width: 100%;
+    }
+
+    .second_nav .second_nav_details p{
+        text-align: center;
+        font-size: .65rem;
+        width: 360px;
+    }
+
+    .mobile_nav_menu{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: var(--ft-light);
+        color: var(--mid-gray);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile_menu_logo, .mobile_nav_menu{
+        display: flex;
+    }
+    .mobile_nav_menu  div{
+        display: flex;
+        align-items: center;
+    }
+    .mobile_nav_menu .mobile_icon img{
+        margin-right: 5px;
+    }
+
+    .mobile_icon_cart{
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile_menu_logo img{
+        object-fit: contain;
+        width: 200px;
+        margin-left: 20px;
+    }
+
+    .mobile_icon_cart:hover, .mobile_icon_naira:hover{
+        color: var(--dark_green);
+    }
+
+
+    .mobile_icon {
+        display: flex;
+        align-items: center;
+    }
+    .mobile_icon_naira{
+        margin-left: 10px;
+    }
+
+    .mobile_menu_dropdown{
+        display:flex ;
+        flex-direction: column;
+        font-family: 'JetBrains Mono', monospace;
+    }
+
+    .mobile_icon_close_icon{
+        object-fit: contain;
+        width: 20px;
+    }
+
+    .third_nav{
+        display: none;
+    }
+
+    .dropDown_head{
+        padding: 10px 15px;
+        background-color: var(--ft-light);
+        color: var(--mid-gray);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dropDown_head a{
+        text-decoration: none;
+        color: var(--mid-gray) ;
+    }
+
+    .fourth_nav{
+        display: none;
+
+    }
 }
