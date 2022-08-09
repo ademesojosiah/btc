@@ -1,0 +1,168 @@
+.single_product_screen{
+    color: var(--text);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+
+.single_product_screen_home_link{
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.single_product_screen_home_link span::before{
+    content: " \003E";
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+
+.single_product_screen_section_two{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.single_product_small_image{
+    object-fit: contain;
+    height: 5rem;
+}
+
+.single_product_screen_upper{
+    display: flex;
+}
+
+.single_product_screen_section_one{
+    width: 40%;
+}
+
+.single_product_screen_section_three{
+    width: 40%;
+}
+
+.single_product_screen_section_three p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.single_product_screen_section_three_head{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.single_product_screen_section_three h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+
+}
+
+.single_product_screen_section_three_price{
+    color: var(--btn-gray);
+    font-size: 2rem;
+    font-family:'JetBrains Mono', monospace ;
+    font-weight: 500;
+}
+
+.single_product_screen_section_three_condition{
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+.single_product_screen_section_three_condition span{
+    font-weight: 400;
+    margin-left: 2rem;
+}
+
+.single_product_screen_section_three section{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.single_product_screen_section_three_New{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 25%;
+    color: var(--mid-gray);
+    background-color:var(--dark_green);
+    border: none;
+    margin-right: 1rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.single_product_screen_section_three_New + button{
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 50%;
+    color: var(--dark_green);
+    background-color:transparent;
+    border: 2px solid var(--dark_green);
+    margin-right: 1rem;
+    transition: 0.5s ease-in-out;
+}
+
+ .single_product_screen_section_three button:hover {
+    transform: scale(1.16);
+}
+
+.single_product_screen_section_three_hashrate_btn{
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 23%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--mid-gray);
+    background-color: var(--dark_green);
+    border: none;
+    margin-bottom: 1rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.single_product_screen_section_three_adc{
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 60%;
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--dark_green);
+    background-color: transparent ;
+    border: 2px solid var(--dark_green);
+    margin-bottom: 1rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+}
+
+.single_product_screen_section_three_btn{
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 60%;
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--mid-gray);
+    background-color: var(--dark_green);
+    border: none;
+    margin-bottom: 1rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+
+
+

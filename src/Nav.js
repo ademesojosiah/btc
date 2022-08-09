@@ -56,6 +56,7 @@ const Nav = () => {
                 <div className="dropDown_head"><a href="/">MINER REPAIR</a></div>
                 <MobileDropdown title={'KNOWLEDGE'}  links={[{url:'',text:'Miner Selection'},{url:'',text:'Setting Up Your Miner'},{url:'',text:'About Kadena(KDA)'},{url:'',text:'About Handshake(HNS)'},{url:'',text:'About Litecoin(LTC)'},{url:'',text:'About Dodge(DODGE)'},{url:'',text:'Miners FAQs'},{url:'',text:'GoldShell Indicator Light'}]}/>
                 <MobileDropdown title={'CONTACT'}  links={[{url:'',text:'Service'},{url:'',text:'Sell Your Miner'},{url:'',text:'Miner Hosting'},{url:'',text:'Join Us'},{url:'',text:'About Us'},{url:'',text:'Newsletter'},{url:'',text:'Client Review Videos'}]}/>
+                <div className="dropDown_head"><a href="/"><span className="second_nav_icon_login">Log in</span> or <span className="second_nav_icon_create_account">Create account</span></a></div>
                 <div className='second_nav_icon_search'><img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt=''/> <input type="search" placeholder='Search' /></div>          
             </div>)}
 
