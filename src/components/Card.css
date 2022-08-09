@@ -1,7 +1,15 @@
 .card {
-	border-right: 1px solid #e1e3e4;
+	border: 1px solid var(--mid-gray);
 	padding: 20px;
-  transition: all cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 140ms;
+	margin: -1px 0 0 -1px;
+}
+
+.card.wide {
+	display: grid;
+	align-items: center;
+	justify-content: space-between;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card:last-child {
@@ -9,8 +17,12 @@
 }
 
 .card-image {
-	width: 214.5px;
-  transition: all ease 200ms;
+	width: 100%;
+	transition: all ease 200ms;
+}
+
+.card-image.home {
+	width: 222px;
 }
 
 .card-name {
@@ -18,15 +30,25 @@
 	font-size: 15px;
 }
 
+.card-name.wide {
+	font-size: 16px;
+	font-weight: 500;
+	max-width: 280px;
+}
+
 .card-price {
-  font-size: 21px;
+	font-size: 21px;
 }
 
 .card-button-con {
-  transition: all ease 250ms;
+	transition: all ease 250ms;
 	margin: 80px 0px 0px 0px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.card-button-con.wide {
+	margin: 0;
 }
 
 .card-button {
@@ -37,17 +59,46 @@
 	color: var(--mid-gray);
 	padding: 10px;
 	border-radius: 2px;
+	margin: 0px 0px 5px;
+	transition: all ease-in-out 200ms;
+	cursor: pointer;
+}
+
+.card-button:hover {
+	transform: scale(1.01);
+}
+
+.card-button:active {
+	transform: scale(0.99);
 }
 
 @media screen and (max-width: 870px) {
 	.card-button-con {
 		margin-top: 20px;
 	}
+	.card-image.home {
+		width: 190px;
+	}
+
+	.card-name.wide {
+		max-width: 120px;
+	}
 }
 
-
 @media (max-width: 600px) {
-  .card-image {
-    width: 150px;
-  }
+	.card-name.wide {
+		max-width: 280px;
+	}
+	.card-image.home {
+		width: 150px;
+	}
+
+	.card.wide {
+		grid-template-columns: 1fr auto;
+	}
+
+	.card-button-con {
+		grid-row: 2;
+		grid-column: 2/3;
+	}
 }

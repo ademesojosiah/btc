@@ -1,23 +1,174 @@
-.products{
-  background-color: #fff;
+.products {
+	background-color: #fff;
+	padding: 50px 40px;
+	transition: all ease 150ms;
 }
 
-.products_header{
-  display: flex;
-  gap: 40px;
-  padding: 0px 40px;
+.products_header {
+	display: flex;
+	gap: 40px;
+	padding: 0px 40px;
 }
 
-.products_main{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+.products_main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin-top: 20px;
+	gap: 30px;
 }
 
-.products_side{
-  grid-column: 1/4;
-  border: 1px solid var(--mid-gray);
+.products_side {
+	grid-column: 1/1;
+	border: 1px solid var(--mid-gray);
+	padding: 20px;
+	height: max-content;
+	margin: -1px 0 0 -1px;
+	transition: all ease 150ms;
 }
 
-.products_mid{
-  grid-column: 4/4;
+.products_mid {
+	grid-column: 2/5;
+	margin: -1px 0 0 -1px;
+	transition: all ease-in 200ms;
+}
+
+.mid_sort {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.mid_bar {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 20px 0px 5px;
+}
+
+.mid_header {
+	padding: 20px;
+	border: 1px solid var(--mid-gray);
+}
+
+.mid_header p {
+	padding: 20px 0px;
+}
+
+.down {
+	width: 20px;
+	height: 15px;
+}
+
+.products_dropdown form {
+	padding: 10px 20px 0px;
+	display: flex;
+	gap: 10px;
+}
+
+.products_side h3 {
+	padding-top: 30px;
+}
+
+.dropbtn {
+	color: var(--text);
+	padding: 8px 16px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 120px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	transition: all ease 100ms;
+}
+
+.dropdown-content span {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+	transition: all ease-in 50ms;
+}
+
+.dropdown-content span:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+}
+
+.card_holder {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	transition: all ease-in 200ms;
+}
+
+.card_holder.view {
+	transition: all ease-in 200ms;
+	display: flex !important;
+	width: 100%;
+	flex-direction: column !important;
+}
+
+.mid_content,
+.mid_view {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.mid_bar div {
+	justify-content: center;
+}
+
+.svg_con {
+	width: 17px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 870px) {
+	.products_side {
+		display: none;
+	}
+
+	.products_main {
+		display: unset;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.products {
+		padding: 20px 10px;
+	}
+
+	.mid_content h5 {
+		display: none;
+	}
+
+	.mid_sort h5 {
+		display: none;
+	}
+
+	.mid_view h5 {
+		display: none;
+	}
+
+	.dropbtn {
+		width: unset;
+	}
 }

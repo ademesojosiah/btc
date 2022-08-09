@@ -7,11 +7,7 @@ import LoginTab from './LoginTab'
 const LoginScreen = () => {
   return (
     <div className='loginScreen'>
-        <Nav />
         <LoginTab />
-        <Footer />
-
-      
     </div>
   )
 }
