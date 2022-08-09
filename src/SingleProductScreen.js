@@ -1,10 +1,15 @@
 import React from 'react';
 import { useState } from 'react';
+import Footer from './Footer';
+import Nav from './Nav';
 import './SingleProductScreen.css';
 
 const SingleProductScreen = () => {
     const[image,setimage] = useState(false)
   return (
+    <>
+    <Nav />
+
     <div className="single_product_screen">
         <p className='single_product_screen_home_link'>Home <span>Goldshell KD6 SE KDA Miner 25.3Th with PSU and Cord</span></p>
         <div className='single_product_screen_upper'>
@@ -40,6 +45,8 @@ const SingleProductScreen = () => {
           
         </div>
     </div>
+    <Footer />
+    </>
   )
 }
 

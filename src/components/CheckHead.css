@@ -1,0 +1,51 @@
+.checkhead{
+  background-color: #fff;
+}
+
+.check_img{
+  width: 200px;
+}
+
+.checkhead_head{
+  display: flex;
+  justify-content: center;
+  background-color: var(--mid-gray);
+}
+
+.summary{
+  display: flex;
+  padding: 10px 25%;
+  background-color: #fafafa;
+  justify-content: space-between;
+}
+
+.order-summary-toggle__icon{
+  fill: var(--dark_green) !important;
+}
+
+.sum_text{
+  display: flex;
+  gap: 10px;
+  color: var(--dark_green);
+}
+
+.checklist{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.checklist span{
+  font-size: 12px;
+}
+
+.checklist span::after{
+  content: '>';
+  padding-left: 10px;
+  font-size: 14px;
+}
+.checklist span:last-child::after{
+  content: '';
+}
