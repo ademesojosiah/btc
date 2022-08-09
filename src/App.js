@@ -7,6 +7,7 @@ import Nav from "./Nav";
 import Products from "./Products";
 import LoginScreen from "./LoginScreen";
 import SignUp from "./SignUp";
+import Cart from "./Cart";
 
 const App = () => {
 	return (
@@ -18,7 +19,7 @@ const App = () => {
         
 				<Route path="/" element={<HomeScreen />} />
 				<Route path="/products" element={<Products />} />
-
+				<Route path="/cart" element={<Cart />} />
 			</Routes>
 			<Footer />
 		</div>
