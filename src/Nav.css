@@ -199,6 +199,7 @@
 	background-color: #191d1b;
 	position: absolute;
 	display: none;
+	z-index: 3;
 }
 
 .fourth_nav .dropBtn:hover .dropBtn_content {

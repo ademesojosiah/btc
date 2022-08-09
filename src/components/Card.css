@@ -38,6 +38,7 @@
 
 .card-price {
 	font-size: 21px;
+	color: var(--dark_green)
 }
 
 .card-button-con {

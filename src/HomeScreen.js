@@ -1,5 +1,5 @@
 import React from "react";
-import hero from "./hero.webp";
+import { Link } from "react-router-dom";
 import './HomeScreen.css'
 import Item from "./components/Item";
 import Svg1 from './svg/Svg1'
@@ -28,8 +28,11 @@ const HomeScreen = () => {
           <Item svg={<Svg4 />} header={'Customer Service'} text={'Top of the line Email, Chat and Phone support'} />
         </section>
 
+
         <div className="button_con">
-          <button className="cta">Shop Now</button>
+          <Link to='/products'>
+            <button className="cta">Shop Now</button>
+          </Link>
         </div>
 
         <Box />

@@ -1,8 +1,9 @@
-import React from 'react'
-import { useState } from 'react';
+import React, { useState }  from 'react'
+import { Link } from "react-router-dom";
 import './Nav.css';
 import Ham from './svgs/icon-hamburger.svg';
 import MobileDropdown from './MobileDropdown'
+
 
 const Nav = () => {
     const [mobile,setmobile] = useState(false)
@@ -24,7 +25,9 @@ const Nav = () => {
 
         </div>
         <div className='third_nav'>
-            <div className='third_nav_logo'><img src="https://cdn.shopify.com/s/files/1/0548/1257/3883/files/1_360x.png?v=1642197150" alt="" /></div>
+            <Link to='/'>
+                <div className='third_nav_logo'><img src="https://cdn.shopify.com/s/files/1/0548/1257/3883/files/1_360x.png?v=1642197150" alt="" /></div>
+            </Link>
             <div className='third_nav_info'>
                 <h2>√Leading Supplier</h2>
                  <p> in America</p>
@@ -71,23 +74,23 @@ const Nav = () => {
         <div className='fourth_nav'>
             <div className='dropBtn'><button className='first_dropdown'>MINERS PROFITABILITY</button>
             <div className='dropBtn_content'>
-                <a href="/">Miners Probability</a>
-                <a href="/">Cost Calculator</a>
-                <a href="/">Btc Earnings Calculator</a>
-                <a href="/">Eth Earnings Calculator</a>
-                <a href="/">LTC + Doge Earning Calculator</a>
-                <a href="/">ETC Earnings Calculator</a>
-                <a href="/">KDA Earnings Calculator</a>
-                <a href="/">HNS Earnings Calculator</a>
+                <Link to="/">Miners Probability</Link>
+                <Link to="/">Cost Calculator</Link>
+                <Link to="/">Btc Earnings Calculator</Link>
+                <Link to="/">Eth Earnings Calculator</Link>
+                <Link to="/">LTC + Doge Earning Calculator</Link>
+                <Link to="/">ETC Earnings Calculator</Link>
+                <Link to="/">KDA Earnings Calculator</Link>
+                <Link to="/">HNS Earnings Calculator</Link>
             </div>
             </div>
-            <div className='dropBtn'><button className=' dropdown '>ALL MINERS</button>
+            <div className='dropBtn'><Link to='products'><button className=' dropdown '>ALL MINERS</button></Link>
             <div className='dropBtn_content'>
-                <a href="/">Bitcoin Miners</a>
-                <a href="/">Ethereum Miners</a>
-                <a href="/">LiteCoin & DodgeCoin Miners</a>
-                <a href="/">Other Altcoin Miners</a>
-                <a href="/">Parts and Accessories </a>
+                <Link to="/">Bitcoin Miners</Link>
+                <Link to="/">Ethereum Miners</Link>
+                <Link to="/">LiteCoin & DodgeCoin Miners</Link>
+                <Link to="/">Other Altcoin Miners</Link>
+                <Link to="/">Parts and Accessories </Link>
             </div>
             </div>
             <div className='dropBtn'><button className=' dropdown '>PAYMENT METHOD</button>
@@ -96,25 +99,25 @@ const Nav = () => {
             </div>
             <div className='dropBtn'><button className=' dropdown '>KNOWLEDGE</button>
             <div className='dropBtn_content'>
-                <a href="/">Miner Selection</a>
-                <a href="/">Setting Up Your Miner</a>
-                <a href="/">About Kadena(KDA)</a>
-                <a href="/">About Handshake(HNS)</a>
-                <a href="/">About Litecoin(LTC)</a>
-                <a href="/">About Dodge(DODGE)</a>
-                <a href="/">Miners FAQs</a>
-                <a href="/">GoldShell Indicator Light</a>
+                <Link to="/">Miner Selection</Link>
+                <Link to="/">Setting Up Your Miner</Link>
+                <Link to="/">About Kadena(KDA)</Link>
+                <Link to="/">About Handshake(HNS)</Link>
+                <Link to="/">About Litecoin(LTC)</Link>
+                <Link to="/">About Dodge(DODGE)</Link>
+                <Link to="/">Miners FAQs</Link>
+                <Link to="/">GoldShell Indicator Light</Link>
             </div>
             </div>
             <div className='dropBtn'><button className=' dropdown '>CONTACT</button>
             <div className='dropBtn_content'>
-                <a href="/">Service</a>
-                <a href="/">Sell Your Miner</a>
-                <a href="/">Miner Hosting</a>
-                <a href="/">Join Us</a>
-                <a href="/">About Us</a>
-                <a href="/">Newsletter</a>
-                <a href="/">Client Review Videos</a>
+                <Link to="/">Service</Link>
+                <Link to="/">Sell Your Miner</Link>
+                <Link to="/">Miner Hosting</Link>
+                <Link to="/">Join Us</Link>
+                <Link to="/">About Us</Link>
+                <Link to="/">Newsletter</Link>
+                <Link to="/">Client Review Videos</Link>
             </div>
             </div>
 
