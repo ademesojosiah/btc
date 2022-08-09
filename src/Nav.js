@@ -17,8 +17,8 @@ const Nav = () => {
             <p>For business clients in the US, Please email us your sales tax exemption to waive your sales tax</p>
             </div>
             <div className='second_nav_icons'>
-                <div><p><span className="second_nav_icon_login">Log in</span> or <span className="second_nav_icon_create_account">Create account</span></p></div>
-                <div className='second_nav_icon_cart'><img src="https://img.icons8.com/material-rounded/24/FFFFFF/shopping-cart.png" alt='cart icon'/>Cart</div>
+                <Link to='/login'><span className="second_nav_icon_login">Log in</span></Link><div><p> or <Link to='/signup'><span className="second_nav_icon_create_account">Create account</span></Link></p></div>
+                <Link to='/cart'><div className='second_nav_icon_cart'><img src="https://img.icons8.com/material-rounded/24/FFFFFF/shopping-cart.png" alt='cart icon'/>Cart</div></Link>
                 <div className='second_nav_icon_naira'>NGN</div>
                 <div className='second_nav_icon_search'><img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt=''/> <input type="search" placeholder='Search' /></div>
             </div>
