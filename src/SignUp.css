@@ -1,86 +1,89 @@
-.signup .signup_or::before , .signup_or::after{
-    margin: 5px;
-    content: '';
-    border-top: 2px solid var(--text);
-    width: 50px;
-    display: inline-block;
-    vertical-align: middle;
-    height: 1px;
+.signup .signup_or::before,
+.signup_or::after {
+	margin: 5px;
+	content: "";
+	border-top: 2px solid var(--text);
+	width: 50px;
+	display: inline-block;
+	vertical-align: middle;
+	height: 1px;
 }
 
-.signup a{
-    text-decoration: none;
-    color: inherit;
+.signup a {
+	text-decoration: none;
+	color: inherit;
 }
 
-.signup{
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-left: 20%;
+.signup {
+	background: #fff;
+	font-family: "Source Sans Pro", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 0px 30px;
 }
 
-.signup h1{
-    font-family: 'JetBrains Mono', monospace;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.signup h1 {
+	font-family: "JetBrains Mono", monospace;
+	margin-bottom: 2rem;
 }
 
-.signup_form{
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 400px;
+button {
+	transition: all ease 150ms;
 }
 
-.signup_form input{
-    padding: 12px 18px ;
-    margin-bottom: 1rem;
+.signup_form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 400px;
 }
 
-.signup_form button{
-    cursor: pointer;
-    border: none;
-    color: var(--mid-gray);
-    background-color: var(--ft-light);
-    font-family: 'Source Sans Pro', sans-serif;
-    width: max-content;
-    font-size: 0.8rem;
-    font-weight: 500;
-    padding: 10px 16px;
-    margin-top: 1rem ;
-    margin-bottom: 1rem ;
-    
-
+.signup_form input {
+	padding: 12px 18px;
+	margin-bottom: 1rem;
 }
 
-.signup_form button:hover{
-    border:2px solid var(--ft-light) ;
-    background-color: transparent;
-    color: var(--ft-light);
+.signup_form button {
+	cursor: pointer;
+	border: none;
+	color: var(--mid-gray);
+	background-color: var(--ft-light);
+	font-family: "Source Sans Pro", sans-serif;
+	width: 100%;
+	font-size: 0.8rem;
+	font-weight: 500;
+	padding: 10px 16px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
-
-.signup_signin_options{
-    display: flex;
-    flex-direction: column;
+.signup_form button:hover {
+	border: 2px solid var(--ft-light);
+	background-color: transparent;
+	color: var(--ft-light);
 }
 
-.signup_signin_options button{
-    cursor: pointer;
-    border-radius: 15px;
-    border: 2px solid var(--ft-light);
-    color: var(--ft-light);
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 500;
-    padding: 10px 15px;
-    width: 20%;
-    margin-bottom: .8rem;
+.signup_signin_options {
+	display: flex;
+	flex-direction: column;
+}
+
+.signup_signin_options button {
+	cursor: pointer;
+	border-radius: 15px;
+	border: 2px solid var(--ft-light);
+	color: var(--ft-light);
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 0.8rem;
+	font-weight: 500;
+	padding: 10px 15px;
+	width: 20%;
+	margin-bottom: 0.8rem;
 }
 
 .signupTab_lower_div p {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-top: .8rem;
-    margin-bottom: .8rem;
+	font-family: "Source Sans Pro", sans-serif;
+	margin-top: 0.8rem;
+	margin-bottom: 0.8rem;
 }
