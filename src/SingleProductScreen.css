@@ -23,6 +23,13 @@
 	width: 290px;
 }
 
+
+.single_product_small_image{
+    cursor: pointer;
+    object-fit: contain;
+    height: 5rem;
+}
+
 .line1 {
 	border-bottom: ;
 	width: 100%;

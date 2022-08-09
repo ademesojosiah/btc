@@ -120,15 +120,6 @@
 	padding-right: 10px;
 }
 
-.third_nav_info button{
-    border: none;
-    border-radius: 5px;
-    color: var(--mid-gray);
-    background: var(--ft-light) ;
-    padding: 15px 20px;
-    font-weight: 600;
-    box-shadow: 0px 3px 2px var(--ft-light);
-}
 
 .third_nav .border {
 	border-left: 1px solid #a4a3a3;
@@ -199,7 +190,6 @@
 	background-color: #191d1b;
 	position: absolute;
 	display: none;
-	z-index: 3;
 }
 
 .fourth_nav .dropBtn:hover .dropBtn_content {

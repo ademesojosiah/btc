@@ -1,12 +1,15 @@
 import React from 'react';
+import { useState } from 'react';
 import './SingleProductScreen.css';
 
 const SingleProductScreen = () => {
+    const[image,setimage] = useState(false)
   return (
     <div className="single_product_screen">
         <p className='single_product_screen_home_link'>Home <span>Goldshell KD6 SE KDA Miner 25.3Th with PSU and Cord</span></p>
         <div className='single_product_screen_upper'>
           <div className="single_product_screen_section_one">
+
             <div className='line1'>
                 <img className='single_product_big_image' src="https://cdn.shopify.com/s/files/1/0548/1257/3883/products/kd6se2_grande.png?v=1656671940" alt="product's image" />
             </div>
