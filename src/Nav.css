@@ -39,6 +39,10 @@
 	align-items: center;
 }
 
+.second_nav_icon_login, .second_nav_icon_create_account, .second_nav_icon_cart{
+	color: var(--mid-gray);
+}
+
 .second_nav .second_nav_icons div {
 	margin-left: 25px;
 	font-family: "JetBrains Mono", monospace;

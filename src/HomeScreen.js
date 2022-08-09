@@ -35,13 +35,13 @@ const HomeScreen = () => {
           </Link>
         </div>
 
-        <Box />
+        <Box title={'Best Sellers'} />
         <section className="home-mid">
           <HomeCard img='https://cdn.shopify.com/s/files/1/2609/9556/files/coinbase-logo-freelogovectors.net_250x.png?v=1641972709' head='Coinbase Commerce | Integrated' text='Pay easly and safely for your order using cryptocurrency and Coinbase.'/>
           <HomeCard img='https://cdn.shopify.com/s/files/1/2609/9556/files/affirm-logo_250x.png?v=1639832180' head='Bitcoin Miners + Affirm | Buy Now, Pay Over Time' text='Make monthly payments for your purchase with no hidden fees.' a='Read more'/>
         </section>
-        <Box />
-        <Box />
+        <Box title={'Beginner Miners'} />
+        <Box title={'Big Mining rigs'} />
         <section className="space">
           <h1 className='coin-head'>Shop by coin</h1>
           <div className="home-coin">

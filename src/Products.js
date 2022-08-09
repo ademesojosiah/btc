@@ -4,6 +4,7 @@ import Card from "./components/Card";
 import HomeCard from "./components/HomeCard";
 import "./Products.css";
 import down from "./svgs/down-arrow-svgrepo-com.svg";
+import { data } from "./data";
 
 const Products = () => {
 	const [view, SetView] = useState("wide");
@@ -16,7 +17,7 @@ const Products = () => {
 	}, [view])
 	
 	const arr = [1,2,3,4,4,5,5,6,6,7,7,3,23,3,32,3,5,5,2,2,2,2,2,2,2]
-	arr.length = 40
+	arr.length = 50
 
 	return (
 		<div className="products">
@@ -45,7 +46,7 @@ const Products = () => {
 				<section className="products_mid">
 					<div className="mid_header">
 						<h1>All products</h1>
-						<p>Showing {`1 - ${display.split(' ')[0]}`} of ... products</p>
+						<p>Showing {`1 - ${display.split(' ')[0]}`} of {arr.length} products</p>
 
 						<div className="mid_bar">
 							<div className="mid_content">
@@ -93,14 +94,14 @@ const Products = () => {
 					{
 					view &&
 					<section className={`card_holder view`}>
-						{arr.map(() =>  <Card isHome isWide/>)}
+						{arr.map((it, i) =>  <Card isHome isWide img={data[i + 18].img} name={data[i].name} price={data[i].price} />)}
 					</section>
 					}
 
 					{
 					!view &&
 					<section className={`card_holder`}>
-						{arr.map(() =>  <Card />)}
+						{arr.map((it, i) =>  <Card img={data[i + 18].img} name={data[i].name} price={data[i].price} />)}
 					</section>
 					}
 					

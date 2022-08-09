@@ -3,6 +3,9 @@
 	padding: 20px;
 	transition: all cubic-bezier(0.19, 1, 0.22, 1) 140ms;
 	margin: -1px 0 0 -1px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .card.wide {
@@ -13,16 +16,18 @@
 }
 
 .card:last-child {
-	border: none;
+	/* border: none; */
 }
 
 .card-image {
-	width: 100%;
+	width: 211.344px;
+	height: 211.344px;
 	transition: all ease 200ms;
 }
 
 .card-image.home {
 	width: 222px;
+	height: 222px;
 }
 
 .card-name {
