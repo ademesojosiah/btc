@@ -30,6 +30,7 @@
 }
 
 .single_product_small_image{
+    cursor: pointer;
     object-fit: contain;
     height: 5rem;
 }
