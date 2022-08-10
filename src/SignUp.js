@@ -1,9 +1,14 @@
 import React from 'react';
 import './SignUp.css'
 import { Link } from "react-router-dom";
+import Nav from './Nav';
+import Footer from './Footer';
 
 const SignUp = () => {
   return (
+    <>
+    <Nav />
+
     <div className='signup'>
                 <h1>Create Account</h1>
         <form className='signup_form' action="">
@@ -27,6 +32,8 @@ const SignUp = () => {
             </div>
         </div> */}
     </div>
+    <Footer />
+    </>
   )
 }
 

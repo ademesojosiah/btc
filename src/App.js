@@ -9,11 +9,12 @@ import LoginScreen from "./LoginScreen";
 import SignUp from "./SignUp";
 import Cart from "./Cart";
 import SingleProductScreen from "./SingleProductScreen";
+import Information from "./Information";
+import Payment from "./Payment";
 
 const App = () => {
 	return (
-		<div>
-			<Nav />
+		<div className="app">
 			<Routes>
 				<Route path="/login" element={<LoginScreen />} />
 				<Route path="/signup" element={<SignUp />} />
@@ -21,8 +22,13 @@ const App = () => {
 				<Route path="/" element={<HomeScreen />} />
 				<Route path="/products" element={<Products />} />
 				<Route path="/cart" element={<Cart />} />
+
+				<Route
+					path="/checkouts/contact_information"
+					element={<Information />}
+				/>
+				<Route path="/checkouts/payment" element={<Payment />} />
 			</Routes>
-			<Footer />
 		</div>
 	);
 };

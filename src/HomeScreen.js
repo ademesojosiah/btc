@@ -9,10 +9,14 @@ import Svg4 from './svg/Svg4'
 import Box from "./components/Box";
 import HomeCard from "./components/HomeCard";
 import Coin from "./components/Coin";
+import Nav from "./Nav";
+import Footer from "./Footer";
 
 
 const HomeScreen = () => {
 	return (
+    <>
+    <Nav />
 		<div className="homescreen">
 			
 
@@ -55,6 +59,8 @@ const HomeScreen = () => {
 
 			</div>
 		</div>
+    <Footer />
+    </>
 	);
 };
 

@@ -1,0 +1,256 @@
+.info_main {
+	max-width: 544px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.info_main_head {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0px 0px;
+}
+
+.info_form input {
+	outline: none;
+	border: 1px solid #d9d9d9;
+	width: 96%;
+	padding: 10px 11px;
+	border-radius: 5px;
+}
+
+.input-checkbox {
+	width: max-content !important;
+	margin-right: 10px !important;
+}
+
+input[type="checkbox"] + label {
+	display: block;
+	margin: 0.2em;
+	cursor: pointer;
+	padding: 0.2em;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] + label:before {
+	content: "\2714";
+	border: 0.1em solid #000;
+	border-radius: 0.2em;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	padding-left: 0.2em;
+	padding-bottom: 0.3em;
+	margin-right: 0.2em;
+	vertical-align: bottom;
+	color: transparent;
+	transition: 0.2s;
+}
+
+input[type="checkbox"] + label:active:before {
+	transform: scale(0);
+}
+
+input[type="checkbox"]:checked + label:before {
+	background-color: MediumSeaGreen;
+	border-color: MediumSeaGreen;
+	color: #fff;
+}
+
+input[type="checkbox"]:disabled + label:before {
+	transform: scale(1);
+	border-color: #aaa;
+}
+
+input[type="checkbox"]:checked:disabled + label:before {
+	transform: scale(1);
+	background-color: #bfb;
+	border-color: #bfb;
+}
+
+.field__input {
+	border: 1px transparent solid;
+	background-clip: padding-box;
+	border-radius: 5px;
+	display: block;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.9285714286em 0.7857142857em;
+	word-break: normal;
+	line-height: inherit;
+}
+
+.field__input {
+	padding-top: 1.5em;
+	padding-bottom: 0.3571428571em;
+}
+
+.field__input {
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+.field__input {
+	background-color: white;
+	color: #333333;
+	border-color: #d9d9d9;
+}
+.field__input--select {
+	padding-right: 2.0714285714em;
+	white-space: nowrap;
+}
+
+option {
+	background-color: #fff;
+	color: #000;
+	font-family: inherit;
+}
+
+.field__label {
+	text-align: left;
+	font-weight: 500;
+	margin: 0.5em 0;
+	display: none;
+}
+
+.field__label {
+	font-size: 0.7971428571em;
+	font-weight: normal;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	margin-top: 0.4285714286em;
+	margin-left: 1px;
+	padding: 0 0.9166666667em;
+	z-index: 1;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transform: translateY(3px);
+	transform: translateY(3px);
+	pointer-events: none;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	opacity: 0;
+}
+
+.field__label {
+	-webkit-transform: none;
+	transform: none;
+	opacity: 1;
+}
+
+.field__label {
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+
+.field__label {
+	color: #333333;
+}
+.field__label--visible {
+	display: block;
+	transition: all 0.2s ease-out;
+}
+
+.ship_address {
+	display: relative;
+}
+
+.field__caret {
+	border-left: 1px rgba(179, 179, 179, 0.5) solid;
+}
+
+.field__caret {
+	display: block;
+	width: 2.1428571429em;
+	height: 43%;
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	-webkit-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+}
+
+.field__input-wrapper.field__input-wrapper--select {
+	position: relative;
+	outline: var(--dark_green);
+}
+
+.ship_address header{
+  padding: 25px 0 10px;
+	font-size: 18px;
+}
+
+.field__input-wrapper {
+  position: relative;
+	height: max-content;
+	margin: 7px 0 10px;
+}
+
+/* .field--show-floating-label .field__label {
+  -webkit-transform: none;
+  transform: none;
+  opacity: 1;
+}
+.floating-labels .main .field__label {
+  color: #737373;
+}
+
+.floating-labels .field--show-floating-label .field__input {
+} */
+
+.field__label.field__label--visible.a{
+	display: none;
+}
+
+.field__label.field__label--visible.a.focus{
+	display: unset;
+}
+
+
+.field__inputa{
+	width: 100%;
+	padding-bottom: 0.3571428571em;
+	transition: all 0.2s ease-out;
+}
+
+.field__inputa.focus{
+	padding-top: 1.7em;
+}
+
+.info_f_con{
+	display: flex;
+	gap: 5%;
+	width: 98%;
+}
+
+.info_f_con.a{
+	gap: 5%;
+	width: 97.3%;
+}
+
+.cta.b{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	margin-top: 10px;
+}
+
+.ll{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+.contact_info{
+	padding: 10px 0;
+}

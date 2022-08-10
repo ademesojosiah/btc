@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import Card from "./components/Card";
 import HomeCard from "./components/HomeCard";
+import Footer from "./Footer";
+import Nav from "./Nav";
 import "./Products.css";
 import down from "./svgs/down-arrow-svgrepo-com.svg";
 import { data } from "./data";
@@ -20,6 +22,9 @@ const Products = () => {
 	arr.length = 50
 
 	return (
+		<>
+    <Nav />
+
 		<div className="products">
 			<main className="products_main">
 				<div className="products_side">
@@ -108,6 +113,8 @@ const Products = () => {
 				</section>
 			</main>
 		</div>
+    <Footer />
+    </>
 	);
 };
 
