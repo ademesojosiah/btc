@@ -22,7 +22,6 @@ const CheckHead = () => {
       <div className='checklist'>
         <span>Cart</span>
         <span>Information</span>
-        <span>Shipping</span>
         <span>Payment</span>
       </div>
     </div>
