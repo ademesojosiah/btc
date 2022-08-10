@@ -6,17 +6,12 @@ import Footer from "./Footer";
 import Nav from "./Nav";
 import "./Products.css";
 import down from "./svgs/down-arrow-svgrepo-com.svg";
-import { data } from "./data";
+import data  from "./data";
 
 const Products = () => {
 	const [view, SetView] = useState("wide");
 	const [sort, SetSort] = useState('Featured')
 	const [display, SetDisplay] = useState('36 per page')
-
-	useEffect(() => {
-		console.log(view)
-		console.log(arr.length)
-	}, [view])
 	
 	const arr = [1,2,3,4,4,5,5,6,6,7,7,3,23,3,32,3,5,5,2,2,2,2,2,2,2]
 	arr.length = 50
@@ -99,14 +94,14 @@ const Products = () => {
 					{
 					view &&
 					<section className={`card_holder view`}>
-						{arr.map((it, i) =>  <Card isHome isWide img={data[i + 18].img} name={data[i].name} price={data[i].price} />)}
+						{arr.map((it, i) =>  <Card isHome isWide img={data[i + 1].img} name={data[i +1].name} price={data[i +1].price} id={data[i+1].id} />)}
 					</section>
 					}
 
 					{
 					!view &&
 					<section className={`card_holder`}>
-						{arr.map((it, i) =>  <Card img={data[i + 18].img} name={data[i].name} price={data[i].price} />)}
+						{arr.map((it, i) =>  <Card img={data[i + 1].img} name={data[i+1].name} price={data[i+1].price} id={data[i+1].id} />)}
 					</section>
 					}
 					

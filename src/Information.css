@@ -184,13 +184,13 @@ option {
 	outline: var(--dark_green);
 }
 
-.ship_address header{
-  padding: 25px 0 10px;
+.ship_address header {
+	padding: 25px 0 10px;
 	font-size: 18px;
 }
 
 .field__input-wrapper {
-  position: relative;
+	position: relative;
 	height: max-content;
 	margin: 7px 0 10px;
 }
@@ -207,50 +207,48 @@ option {
 .floating-labels .field--show-floating-label .field__input {
 } */
 
-.field__label.field__label--visible.a{
+.field__label.field__label--visible.a {
 	display: none;
 }
 
-.field__label.field__label--visible.a.focus{
+.field__label.field__label--visible.a.focus {
 	display: unset;
 }
 
-
-.field__inputa{
+.field__inputa {
 	width: 100%;
 	padding-bottom: 0.3571428571em;
 	transition: all 0.2s ease-out;
 }
 
-.field__inputa.focus{
+.field__inputa.focus {
 	padding-top: 1.7em;
 }
 
-.info_f_con{
+.info_f_con {
 	display: flex;
 	gap: 5%;
 	width: 98%;
 }
 
-.info_f_con.a{
+.info_f_con.a {
 	gap: 5%;
 	width: 97.3%;
 }
 
-.cta.b{
+.cta.b {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 40px;
 	margin-top: 10px;
 }
 
-.ll{
+.ll {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 }
 
-
-.contact_info{
+.contact_info {
 	padding: 10px 0;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Card.css";
 
-const Card = ({ isHome, isWide, img, name, price }) => {
+const Card = ({ isHome, isWide, img, name, price, id }) => {
 	return (
 		<div className={`card ${isWide && "wide"}`}>
 			<img
@@ -18,7 +18,7 @@ const Card = ({ isHome, isWide, img, name, price }) => {
 			</div>
 				<section className={`card-button-con ${isWide && "wide"}`}>
 					<Link to='/cart'><button className="card-button">ADD TO CART</button></Link>
-					<Link to='/product' ><button className="card-button">VIEW</button></Link>
+					<Link to={`/product/${id}`} ><button className="card-button">VIEW</button></Link>
 				</section>
 		</div>
 	);

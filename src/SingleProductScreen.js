@@ -3,20 +3,31 @@ import { useState } from 'react';
 import Footer from './Footer';
 import Nav from './Nav';
 import './SingleProductScreen.css';
+import data from "./data";
+import { useParams } from 'react-router-dom';
 
 const SingleProductScreen = () => {
     const[image,setimage] = useState(false)
+    let { itemId } = useParams();
+    console.log(itemId)
+    
+    
+    const newData = data.filter(item => item.id === itemId )
+    console.log(newData)
+    
   return (
+    <>
+    {newData &&
     <>
     <Nav />
 
     <div className="single_product_screen">
-        <p className='single_product_screen_home_link'>Home <span>Goldshell KD6 SE KDA Miner 25.3Th with PSU and Cord</span></p>
+        <p className='single_product_screen_home_link'>Home <span>{newData[0]['name']}</span></p>
         <div className='single_product_screen_upper'>
           <div className="single_product_screen_section_one">
 
             <div className='line1'>
-                <img className='single_product_big_image' src="https://cdn.shopify.com/s/files/1/0548/1257/3883/products/kd6se2_grande.png?v=1656671940" alt="product's image" />
+                <img className='single_product_big_image' src={newData[0]['img']} alt="product's image" />
             </div>
                 
                 <div className="single_product_screen_section_inner">
@@ -28,9 +39,9 @@ const SingleProductScreen = () => {
           </div>
           
           <div className="single_product_screen_section_three">
-            <p className='single_product_screen_section_three_head'>BT Miners</p>
-            <h2>Goldshell KD6 SE KDA Miner 25.3Th with PSU and Cord</h2>
-            <p className='single_product_screen_section_three_price'>#4,221,075.52</p>
+            <p className='single_product_screen_section_three_head'>{newData[0]['coin']} Miners</p>
+            <h2>{newData[0]['name']}</h2>
+            <p className='single_product_screen_section_three_price'>${newData[0]['price']}</p>
             {/* <p className='single_product_screen_section_three_condition'>Condition <span>New</span></p>
             <button className='single_product_screen_section_three_New'>New</button><button>Used Under Warrranty</button> */}
             {/* <p className='single_product_screen_section_three_condition'>Hashrate<span>25.3Th/s</span></p> */}
@@ -46,6 +57,8 @@ const SingleProductScreen = () => {
         </div>
     </div>
     <Footer />
+    </>
+    }
     </>
   )
 }

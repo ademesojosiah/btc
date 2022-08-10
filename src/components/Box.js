@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Box.css";
 import Card from "./Card";
 import { useEffect } from "react";
-import { data } from "../data";
+import data  from "../data";
 import { Link } from "react-router-dom";
 
 const Box = ({ header, elements, title }) => {
@@ -20,7 +20,7 @@ const Box = ({ header, elements, title }) => {
 			<div className="box-card-con">
 				{arr.map(
 					(item, i) =>
-						<Card isHome img={data[i + 18].img} name={data[i].name} price={data[i].price} />
+						<Card isHome img={data[i+1].img} name={data[i+1].name} price={data[i+1].price} id={data[i+1].id} />
 						// <>sd</>
 				)}
 			</div>
